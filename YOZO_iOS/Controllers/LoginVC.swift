@@ -173,16 +173,18 @@ class LoginVC: UIViewController {
             make.height.equalTo(35)
         }
         searchIdBotton.snp.makeConstraints{ make in
-            make.top.equalTo(loginButton.snp.bottom).offset(3)
+            make.top.equalToSuperview().offset(480)
+            //  make.top.equalTo(loginButton.snp.bottom).offset(10)
             make.left.equalToSuperview().offset(115)
-           // make.right.equalTo(searchPwButton.snp.left).offset(-12)
-            make.height.equalTo(14)
+      //      make.right.equalToSuperview().offset(-204)
             make.width.equalTo(70)
+            make.height.equalTo(14)
         }
         searchPwButton.snp.makeConstraints{ make in
-            make.top.equalTo(loginButton.snp.bottom).offset(3)
+            make.top.equalToSuperview().offset(480)
+            // make.top.equalTo(loginButton.snp.bottom).offset(10)
             make.left.equalTo(searchIdBotton.snp.right).offset(3)
-            make.right.equalToSuperview().offset(-115)
+            make.width.equalTo(70)
             make.height.equalTo(14)
         }
         
