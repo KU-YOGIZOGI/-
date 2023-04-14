@@ -121,7 +121,7 @@ class LoginVC: UIViewController {
         button.clipsToBounds = true
         button.setTitle("비밀번호 찾기", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 13, weight: .semibold)
-        button.setTitleColor(UIColor.black, for: .normal)
+        button.setTitleColor(UIColor(r: 146, g: 143, b: 143), for: .normal)
  
         //     button.addTarget(MainViewController.self, action: #selector(filterbuttonTapped), for: .touchUpInside)
         
@@ -129,6 +129,22 @@ class LoginVC: UIViewController {
         
     }()
     
+    private let signUpButton: UIButton = {
+        
+        let button = UIButton()
+        
+        button.clipsToBounds = true
+        button.setTitle("회원가입", for: .normal)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 13, weight: .semibold)
+        button.setTitleColor(UIColor(r: 146, g: 143, b: 143), for: .normal)
+ 
+        //     button.addTarget(MainViewController.self, action: #selector(filterbuttonTapped), for: .touchUpInside)
+        
+        return button
+        
+    }()
+    
+ 
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -145,14 +161,16 @@ class LoginVC: UIViewController {
         self.view.addSubview(logoENLabel)
         self.view.addSubview(idTextField)
         self.view.addSubview(pwTextField)
+        self.view.addSubview(loginButton)
         self.view.addSubview(searchIdBotton)
         self.view.addSubview(searchPwButton)
+        self.view.addSubview(signUpButton)
         
         logoLabel.snp.makeConstraints { make in
             make.edges.equalTo(UIEdgeInsets(top: 231, left: 120, bottom: 558, right: 95))
         }
         logoENLabel.snp.makeConstraints { make in
-            make.edges.equalTo(UIEdgeInsets(top: 291, left: 145, bottom: 535, right: 95))
+            make.edges.equalTo(UIEdgeInsets(top: 291, left: 145, bottom: 540, right: 95))
         }
         idTextField.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(365)
@@ -166,27 +184,33 @@ class LoginVC: UIViewController {
             make.right.equalToSuperview().offset(-57)
             make.height.equalTo(25)
         }
+        
         loginButton.snp.makeConstraints{ make in
             make.top.equalTo(pwTextField.snp.bottom).offset(20)
             make.left.equalToSuperview().offset(57)
             make.right.equalToSuperview().offset(-57)
-            make.height.equalTo(35)
+            make.height.equalTo(30)
         }
+        signUpButton.snp.makeConstraints{ make in
+            make.top.equalTo(loginButton.snp.bottom).offset(13)
+            make.left.equalToSuperview().offset(100)
+            make.right.equalTo(searchIdBotton.snp.left).offset(-7)
+            make.height.equalTo(14)
+        }
+        
         searchIdBotton.snp.makeConstraints{ make in
-            make.top.equalToSuperview().offset(480)
-            //  make.top.equalTo(loginButton.snp.bottom).offset(10)
-            make.left.equalToSuperview().offset(115)
-      //      make.right.equalToSuperview().offset(-204)
-            make.width.equalTo(70)
+            make.top.equalTo(loginButton.snp.bottom).offset(13)
+            make.left.equalTo(signUpButton.snp.right).offset(20)
+            make.width.equalTo(65)
             make.height.equalTo(14)
         }
         searchPwButton.snp.makeConstraints{ make in
-            make.top.equalToSuperview().offset(480)
-            // make.top.equalTo(loginButton.snp.bottom).offset(10)
+            make.top.equalTo(loginButton.snp.bottom).offset(13)
             make.left.equalTo(searchIdBotton.snp.right).offset(3)
-            make.width.equalTo(70)
+            make.width.equalTo(80)
             make.height.equalTo(14)
         }
+   
         
     }
 }

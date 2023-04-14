@@ -18,7 +18,7 @@
 		7A5BC91529E63F1500BBC3B3 /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BC91429E63F1500BBC3B3 /* SignupVC.swift */; };
 		7A5BC91729E63F2700BBC3B3 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BC91629E63F2700BBC3B3 /* MainVC.swift */; };
 		7A5BC91929E65E4F00BBC3B3 /* InsetTextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BC91829E65E4F00BBC3B3 /* InsetTextField+Extension.swift */; };
-		7A5BC91B29E69DDE00BBC3B3 /* SplashLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A5BC91A29E69DDE00BBC3B3 /* SplashLogo.png */; };
+		7A5BC91F29E9348000BBC3B3 /* SplashLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A5BC91E29E9347F00BBC3B3 /* SplashLogo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +36,7 @@
 		7A5BC91429E63F1500BBC3B3 /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
 		7A5BC91629E63F2700BBC3B3 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		7A5BC91829E65E4F00BBC3B3 /* InsetTextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InsetTextField+Extension.swift"; sourceTree = "<group>"; };
-		7A5BC91A29E69DDE00BBC3B3 /* SplashLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SplashLogo.png; path = icon/SplashLogo.png; sourceTree = SOURCE_ROOT; };
+		7A5BC91E29E9347F00BBC3B3 /* SplashLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SplashLogo.png; sourceTree = "<group>"; };
 		D4DCA2243FF8BECE59C2C208 /* Pods_YOZO_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YOZO_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -90,7 +90,7 @@
 				7A5BC8F429E63A2500BBC3B3 /* AppDelegate.swift */,
 				7A5BC8F629E63A2500BBC3B3 /* SceneDelegate.swift */,
 				7A5BC8FF29E63A2600BBC3B3 /* Splash.storyboard */,
-				7A5BC91A29E69DDE00BBC3B3 /* SplashLogo.png */,
+				7A5BC91E29E9347F00BBC3B3 /* SplashLogo.png */,
 				7A5BC8FD29E63A2600BBC3B3 /* Assets.xcassets */,
 				7A5BC90229E63A2600BBC3B3 /* Info.plist */,
 			);
@@ -216,7 +216,7 @@
 			files = (
 				7A5BC90129E63A2600BBC3B3 /* Splash.storyboard in Resources */,
 				7A5BC8FE29E63A2600BBC3B3 /* Assets.xcassets in Resources */,
-				7A5BC91B29E69DDE00BBC3B3 /* SplashLogo.png in Resources */,
+				7A5BC91F29E9348000BBC3B3 /* SplashLogo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
