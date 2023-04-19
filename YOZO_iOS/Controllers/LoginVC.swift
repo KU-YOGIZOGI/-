@@ -107,7 +107,7 @@ class LoginVC: UIViewController {
         button.setTitle("아아디 찾기", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 13, weight: .semibold)
         button.setTitleColor(UIColor(r: 146, g: 143, b: 143), for: .normal)
-
+        
         
         //     button.addTarget(MainViewController.self, action: #selector(filterbuttonTapped), for: .touchUpInside)
         
@@ -122,7 +122,7 @@ class LoginVC: UIViewController {
         button.setTitle("비밀번호 찾기", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 13, weight: .semibold)
         button.setTitleColor(UIColor(r: 146, g: 143, b: 143), for: .normal)
- 
+        
         //     button.addTarget(MainViewController.self, action: #selector(filterbuttonTapped), for: .touchUpInside)
         
         return button
@@ -137,14 +137,33 @@ class LoginVC: UIViewController {
         button.setTitle("회원가입", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 13, weight: .semibold)
         button.setTitleColor(UIColor(r: 146, g: 143, b: 143), for: .normal)
- 
+        
         //     button.addTarget(MainViewController.self, action: #selector(filterbuttonTapped), for: .touchUpInside)
         
         return button
         
     }()
     
- 
+    private var viewModel = LoginViewModel()
+    
+    @objc private func loginButtonTapped(_ sender: UIButton) {
+          viewModel.login { success in
+              if success {
+                  let mainViewController = MainVC()
+                  self.navigationController?.pushViewController(mainViewController, animated: true)
+              } else {
+                  self.show()
+              }
+          }
+      }
+    
+    private func show() {
+           let alert = UIAlertController(title: "Login failed", message: "Please check your credentials and try again", preferredStyle: .alert)
+           let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+           alert.addAction(okAction)
+           present(alert, animated: true, completion: nil)
+       }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -210,7 +229,9 @@ class LoginVC: UIViewController {
             make.width.equalTo(80)
             make.height.equalTo(14)
         }
-   
+        
         
     }
+    
 }
+
