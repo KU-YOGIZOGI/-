@@ -193,21 +193,21 @@ class LoginVC: UIViewController {
         }
         idTextField.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(365)
-            make.left.equalToSuperview().offset(57)
-            make.right.equalToSuperview().offset(-57)
+            make.left.equalToSuperview().offset(53)
+            make.right.equalToSuperview().offset(-53)
             make.height.equalTo(25)
         }
         pwTextField.snp.makeConstraints{ make in
             make.top.equalTo(idTextField.snp.bottom).offset(10)
-            make.left.equalToSuperview().offset(57)
-            make.right.equalToSuperview().offset(-57)
+            make.left.equalToSuperview().offset(53)
+            make.right.equalToSuperview().offset(-53)
             make.height.equalTo(25)
         }
         
         loginButton.snp.makeConstraints{ make in
             make.top.equalTo(pwTextField.snp.bottom).offset(20)
-            make.left.equalToSuperview().offset(57)
-            make.right.equalToSuperview().offset(-57)
+            make.left.equalToSuperview().offset(53)
+            make.right.equalToSuperview().offset(-53)
             make.height.equalTo(30)
         }
         signUpButton.snp.makeConstraints{ make in

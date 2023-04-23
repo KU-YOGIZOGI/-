@@ -10,6 +10,7 @@
 		717A31CFCC59203ED1E67E8D /* Pods_YOZO_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4DCA2243FF8BECE59C2C208 /* Pods_YOZO_iOS.framework */; };
 		7A4FAF4129EFAFF100E19842 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4FAF4029EFAFF100E19842 /* SignupViewModel.swift */; };
 		7A4FAF4329EFAFFF00E19842 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4FAF4229EFAFFF00E19842 /* LoginViewModel.swift */; };
+		7A4FAF4529F4ED8000E19842 /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4FAF4429F4ED8000E19842 /* SignupVC.swift */; };
 		7A5BC8F529E63A2500BBC3B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BC8F429E63A2500BBC3B3 /* AppDelegate.swift */; };
 		7A5BC8F729E63A2500BBC3B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BC8F629E63A2500BBC3B3 /* SceneDelegate.swift */; };
 		7A5BC8F929E63A2500BBC3B3 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BC8F829E63A2500BBC3B3 /* LoginVC.swift */; };
@@ -17,7 +18,6 @@
 		7A5BC90129E63A2600BBC3B3 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A5BC8FF29E63A2600BBC3B3 /* Splash.storyboard */; };
 		7A5BC91129E63B5600BBC3B3 /* UITextField+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BC91029E63B5600BBC3B3 /* UITextField+Extenstion.swift */; };
 		7A5BC91329E63B6500BBC3B3 /*  UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BC91229E63B6500BBC3B3 /*  UIColor+Extension.swift */; };
-		7A5BC91529E63F1500BBC3B3 /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BC91429E63F1500BBC3B3 /* SignupVC.swift */; };
 		7A5BC91729E63F2700BBC3B3 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BC91629E63F2700BBC3B3 /* MainVC.swift */; };
 		7A5BC91929E65E4F00BBC3B3 /* InsetTextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BC91829E65E4F00BBC3B3 /* InsetTextField+Extension.swift */; };
 		7A5BC91F29E9348000BBC3B3 /* SplashLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A5BC91E29E9347F00BBC3B3 /* SplashLogo.png */; };
@@ -28,6 +28,7 @@
 		5226DFAB06D975DE15781832 /* Pods-YOZO_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YOZO_iOS.release.xcconfig"; path = "Target Support Files/Pods-YOZO_iOS/Pods-YOZO_iOS.release.xcconfig"; sourceTree = "<group>"; };
 		7A4FAF4029EFAFF100E19842 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
 		7A4FAF4229EFAFFF00E19842 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		7A4FAF4429F4ED8000E19842 /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
 		7A5BC8F129E63A2500BBC3B3 /* YOZO_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YOZO_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A5BC8F429E63A2500BBC3B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A5BC8F629E63A2500BBC3B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,7 +38,6 @@
 		7A5BC90229E63A2600BBC3B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A5BC91029E63B5600BBC3B3 /* UITextField+Extenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extenstion.swift"; sourceTree = "<group>"; };
 		7A5BC91229E63B6500BBC3B3 /*  UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " UIColor+Extension.swift"; sourceTree = "<group>"; };
-		7A5BC91429E63F1500BBC3B3 /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
 		7A5BC91629E63F2700BBC3B3 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		7A5BC91829E65E4F00BBC3B3 /* InsetTextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InsetTextField+Extension.swift"; sourceTree = "<group>"; };
 		7A5BC91E29E9347F00BBC3B3 /* SplashLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SplashLogo.png; sourceTree = "<group>"; };
@@ -145,7 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				7A5BC8F829E63A2500BBC3B3 /* LoginVC.swift */,
-				7A5BC91429E63F1500BBC3B3 /* SignupVC.swift */,
+				7A4FAF4429F4ED8000E19842 /* SignupVC.swift */,
 				7A5BC91629E63F2700BBC3B3 /* MainVC.swift */,
 			);
 			path = Controllers;
@@ -276,12 +276,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A4FAF4129EFAFF100E19842 /* SignupViewModel.swift in Sources */,
-				7A5BC91529E63F1500BBC3B3 /* SignupVC.swift in Sources */,
 				7A5BC8F929E63A2500BBC3B3 /* LoginVC.swift in Sources */,
 				7A5BC8F529E63A2500BBC3B3 /* AppDelegate.swift in Sources */,
 				7A5BC91129E63B5600BBC3B3 /* UITextField+Extenstion.swift in Sources */,
 				7A5BC8F729E63A2500BBC3B3 /* SceneDelegate.swift in Sources */,
 				7A5BC91929E65E4F00BBC3B3 /* InsetTextField+Extension.swift in Sources */,
+				7A4FAF4529F4ED8000E19842 /* SignupVC.swift in Sources */,
 				7A5BC91329E63B6500BBC3B3 /*  UIColor+Extension.swift in Sources */,
 				7A4FAF4329EFAFFF00E19842 /* LoginViewModel.swift in Sources */,
 				7A5BC91729E63F2700BBC3B3 /* MainVC.swift in Sources */,
