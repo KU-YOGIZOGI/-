@@ -10,6 +10,8 @@ import SnapKit
 
 class LoginVC: UIViewController {
     
+    private let viewModel = LoginViewModel()
+    
     private let logoLabel: UILabel = {
         
         let Label = UILabel()
@@ -93,7 +95,7 @@ class LoginVC: UIViewController {
         button.layer.shadowOffset = CGSize(width: 0, height: 4)
         button.layer.shadowRadius = 4
         button.layer.shadowOpacity = 0.25
-        //     button.addTarget(MainViewController.self, action: #selector(filterbuttonTapped), for: .touchUpInside)
+        //   button.addTarget(MainVC.self, action: #selector(loginButtonTapped(LoginVC)), for: .touchUpInside)
         
         return button
         
@@ -144,25 +146,6 @@ class LoginVC: UIViewController {
         
     }()
     
-    private var viewModel = LoginViewModel()
-    
-    @objc private func loginButtonTapped(_ sender: UIButton) {
-          viewModel.login { success in
-              if success {
-                  let mainViewController = MainVC()
-                  self.navigationController?.pushViewController(mainViewController, animated: true)
-              } else {
-                  self.show()
-              }
-          }
-      }
-    
-    private func show() {
-           let alert = UIAlertController(title: "Login failed", message: "Please check your credentials and try again", preferredStyle: .alert)
-           let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-           alert.addAction(okAction)
-           present(alert, animated: true, completion: nil)
-       }
     
     
     override func viewDidLoad() {
@@ -171,6 +154,23 @@ class LoginVC: UIViewController {
         setup()
         
     }
+    
+       
+       private func showSignupVC() {
+           let signupVC = Signup()
+           navigationController?.pushViewController(signupVC, animated: true)
+       }
+       
+       @objc private func loginButtonTapped() {
+           // 로그인 버튼을 눌렀을 때 로직 구현
+           let mainVC = MainVC()
+           navigationController?.pushViewController(mainVC, animated: true)
+       }
+       
+       @objc private func signupButtonTapped() {
+           // 가입 버튼을 눌렀을 때 로직 구현
+           showSignupVC()
+       }
     
     func setup(){
         
@@ -184,6 +184,8 @@ class LoginVC: UIViewController {
         self.view.addSubview(searchIdBotton)
         self.view.addSubview(searchPwButton)
         self.view.addSubview(signUpButton)
+        
+        pwTextField.isSecureTextEntry = true
         
         logoLabel.snp.makeConstraints { make in
             make.edges.equalTo(UIEdgeInsets(top: 231, left: 120, bottom: 558, right: 95))

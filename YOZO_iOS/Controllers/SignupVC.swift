@@ -5,7 +5,6 @@
 //  Created by 홍서린 on 2023/04/23.
 //
 
-import Foundation
 import UIKit
 import SnapKit
 
@@ -183,6 +182,9 @@ class Signup: UIViewController {
         self.view.addSubview(emailNoticeLabel)
         self.view.addSubview(doneButton)
         
+        signUpPwTextField.isSecureTextEntry = true
+        signUpPwCheckTextField.isSecureTextEntry = true
+     
         idLabel.snp.makeConstraints { make in
             make.edges.equalTo(UIEdgeInsets(top: 176, left: 50, bottom: 646, right: 241))
         }
