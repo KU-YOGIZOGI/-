@@ -95,8 +95,8 @@ class LoginVC: UIViewController {
         button.layer.shadowOffset = CGSize(width: 0, height: 4)
         button.layer.shadowRadius = 4
         button.layer.shadowOpacity = 0.25
-        //   button.addTarget(MainVC.self, action: #selector(loginButtonTapped(LoginVC)), for: .touchUpInside)
-        
+//        button.addTarget(LoginVC.self, action: #selector(loginButtonTapped(UIButton)), for: .touchUpInside)
+//        
         return button
         
     }()
@@ -155,21 +155,23 @@ class LoginVC: UIViewController {
         
     }
     
-       
-       private func showSignupVC() {
-           let signupVC = Signup()
-           navigationController?.pushViewController(signupVC, animated: true)
+    
+    @objc func signupButtonTapped(_ sender: UIButton) {
+           let alertController = UIAlertController(title: "회원 가입", message: "The button was clicked.", preferredStyle: .alert)
+           let okAction = UIAlertAction(title: "OK", style: .default) { (action) in
+               // OK 버튼을 클릭하면 실행될 코드
+           }
+           alertController.addAction(okAction)
+           self.present(alertController, animated: true, completion: nil)
        }
-       
-       @objc private func loginButtonTapped() {
-           // 로그인 버튼을 눌렀을 때 로직 구현
-           let mainVC = MainVC()
-           navigationController?.pushViewController(mainVC, animated: true)
-       }
-       
-       @objc private func signupButtonTapped() {
-           // 가입 버튼을 눌렀을 때 로직 구현
-           showSignupVC()
+    
+    @objc func loginButtonTapped(_ sender: UIButton) {
+           let alertController = UIAlertController(title: "", message: "The button was clicked.", preferredStyle: .alert)
+           let okAction = UIAlertAction(title: "OK", style: .default) { (action) in
+               // OK 버튼을 클릭하면 실행될 코드
+           }
+           alertController.addAction(okAction)
+           self.present(alertController, animated: true, completion: nil)
        }
     
     func setup(){
@@ -186,6 +188,7 @@ class LoginVC: UIViewController {
         self.view.addSubview(signUpButton)
         
         pwTextField.isSecureTextEntry = true
+        self.idTextField.autocapitalizationType = .none
         
         logoLabel.snp.makeConstraints { make in
             make.edges.equalTo(UIEdgeInsets(top: 231, left: 120, bottom: 558, right: 95))

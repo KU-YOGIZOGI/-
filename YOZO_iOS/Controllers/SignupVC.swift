@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class Signup: UIViewController {
+class SignupVC: UIViewController {
     
     private let idLabel: UILabel = {
         
@@ -182,8 +182,11 @@ class Signup: UIViewController {
         self.view.addSubview(emailNoticeLabel)
         self.view.addSubview(doneButton)
         
-        signUpPwTextField.isSecureTextEntry = true
+        signUpPwTextField.isSecureTextEntry = true //TF masking
         signUpPwCheckTextField.isSecureTextEntry = true
+        self.signUpIdTextField.autocapitalizationType = .none //TF 항상 소문자 영어로 시작
+        self.emailTextField.autocapitalizationType = .none
+        
      
         idLabel.snp.makeConstraints { make in
             make.edges.equalTo(UIEdgeInsets(top: 176, left: 50, bottom: 646, right: 241))
