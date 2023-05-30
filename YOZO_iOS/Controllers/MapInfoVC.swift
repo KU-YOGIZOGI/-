@@ -30,12 +30,12 @@ class MapInfoVC: UIViewController,CLLocationManagerDelegate {
             print(locationManager.location?.coordinate)
             
             //현 위치로 카메라 이동
-            let cameraUpdate = NMFCameraUpdate(scrollTo: NMGLatLng(lat: locationManager.location?.coordinate.latitude ?? 0, lng: locationManager.location?.coordinate.longitude ?? 0))
+            let cameraUpdate = NMFCameraUpdate(scrollTo: NMGLatLng(lat: locationManager.location?.coordinate.latitude ?? 37.58715002006896, lng: locationManager.location?.coordinate.longitude ??  126.97548757998842 ))
             cameraUpdate.animation = .easeIn
             mapView.moveCamera(cameraUpdate)
             
             let marker = NMFMarker()
-            marker.position = NMGLatLng(lat: locationManager.location?.coordinate.latitude ?? 0, lng: locationManager.location?.coordinate.longitude ?? 0)
+            marker.position = NMGLatLng(lat: locationManager.location?.coordinate.latitude ?? 37.58715002006896, lng: locationManager.location?.coordinate.longitude ?? 126.97548757998842)
             marker.mapView = mapView
             
         } else {
