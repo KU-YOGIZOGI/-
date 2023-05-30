@@ -25,10 +25,6 @@ class TasteReviewListVC: UIViewController {
     }()
     
     
-
-    
-  
-    
     
     //컬렉션 뷰
     private lazy var tasteListCollectionView: UICollectionView = {

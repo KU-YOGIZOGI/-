@@ -111,6 +111,9 @@ class TasteReviewCell: UICollectionViewCell {
         self.addSubview(sweetIntensityLabel)
         self.addSubview(foodImage)
         
+
+        
+        
     }
     
 }
