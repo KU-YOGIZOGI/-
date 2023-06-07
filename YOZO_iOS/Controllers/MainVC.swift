@@ -42,52 +42,23 @@ class MainVC: UIViewController,CLLocationManagerDelegate, UISheetPresentationCon
             marker2.position = NMGLatLng(lat: locationManager.location?.coordinate.latitude ?? 37.54229891126673, lng: locationManager.location?.coordinate.longitude ?? 127.06886803313095)
             marker2.mapView = mapView
             
+            // 마커를 클릭했을 때 HalfModalView를 나타내는 동작을 설정합니다.
+            marker1.touchHandler = { [weak self] _ in
+                guard let self = self else { return false }
+                
+                // HalfModalView를 보여줄 코드를 작성합니다.
+                let halfModalVC = MapInfoVC()
+                self.present(halfModalVC, animated: true, completion: nil)
+                
+                return true
+            }
+            
         } else {
             print("위치 서비스 Off 상태")
         }
         
-        let btn = UIButton(type: .system)
-                view.addSubview(btn)
-                btn.frame = .init(x: 100, y: 100, width: 100, height: 100)
-                btn.setTitle(" ", for: .normal)
-                btn.addTarget(self, action: #selector(presentModalBtnTap), for: .touchUpInside)
-        
-    }
-    
-  
-    @objc private func presentModalBtnTap() {
-        
-        let vc = UIViewController()
-        vc.view.backgroundColor = .systemYellow
-        
-        vc.modalPresentationStyle = .pageSheet
-        
-        if let sheet = vc.sheetPresentationController {
-            
-            //지원할 크기 지정
-            sheet.detents = [.medium(), .large()]
-            //크기 변하는거 감지
-            sheet.delegate = self
-           
-            //시트 상단에 그래버 표시 (기본 값은 false)
-            sheet.prefersGrabberVisible = true
-            
-            //처음 크기 지정 (기본 값은 가장 작은 크기)
-            //sheet.selectedDetentIdentifier = .large
-            
-            //뒤 배경 흐리게 제거 (기본 값은 모든 크기에서 배경 흐리게 됨)
-            //sheet.largestUndimmedDetentIdentifier = .medium
-        }
-        
-        present(vc, animated: true, completion: nil)
     }
     
     
 }
 
-//extension MainVC: UISheetPresentationControllerDelegate {
-//    func sheetPresentationControllerDidChangeSelectedDetentIdentifier(_ sheetPresentationController: UISheetPresentationController) {
-//        //크기 변경 됐을 경우
-//        print(sheetPresentationController.selectedDetentIdentifier == .large ? "large" : "medium")
-//    }
-//}

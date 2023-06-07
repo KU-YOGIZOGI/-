@@ -10,7 +10,13 @@ import UIKit
 import SnapKit
 import CoreLocation
 
-class MapInfoVC : UIPresentationController {
-    
+class MapInfoVC : UIViewController {
+   
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        view.backgroundColor = .white
+        
+    }
   
 }
