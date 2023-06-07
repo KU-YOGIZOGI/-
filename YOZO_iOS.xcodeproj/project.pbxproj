@@ -15,7 +15,7 @@
 		7A4FAF4129EFAFF100E19842 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4FAF4029EFAFF100E19842 /* SignupViewModel.swift */; };
 		7A4FAF4329EFAFFF00E19842 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4FAF4229EFAFFF00E19842 /* LoginViewModel.swift */; };
 		7A4FAF4529F4ED8000E19842 /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4FAF4429F4ED8000E19842 /* SignupVC.swift */; };
-		7A4FAF4929F7B6CE00E19842 /* MapInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4FAF4829F7B6CE00E19842 /* MapInfoVC.swift */; };
+		7A4FAF4929F7B6CE00E19842 /* RestaurantInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4FAF4829F7B6CE00E19842 /* RestaurantInfoVC.swift */; };
 		7A5BC8F529E63A2500BBC3B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BC8F429E63A2500BBC3B3 /* AppDelegate.swift */; };
 		7A5BC8F729E63A2500BBC3B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BC8F629E63A2500BBC3B3 /* SceneDelegate.swift */; };
 		7A5BC8F929E63A2500BBC3B3 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BC8F829E63A2500BBC3B3 /* LoginVC.swift */; };
@@ -39,7 +39,7 @@
 		7A4FAF4029EFAFF100E19842 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
 		7A4FAF4229EFAFFF00E19842 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		7A4FAF4429F4ED8000E19842 /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
-		7A4FAF4829F7B6CE00E19842 /* MapInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInfoVC.swift; sourceTree = "<group>"; };
+		7A4FAF4829F7B6CE00E19842 /* RestaurantInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantInfoVC.swift; sourceTree = "<group>"; };
 		7A5BC8F129E63A2500BBC3B3 /* YOZO_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YOZO_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A5BC8F429E63A2500BBC3B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A5BC8F629E63A2500BBC3B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -162,7 +162,7 @@
 				7A5BC8F829E63A2500BBC3B3 /* LoginVC.swift */,
 				7A4FAF4429F4ED8000E19842 /* SignupVC.swift */,
 				7A5BC91629E63F2700BBC3B3 /* MainVC.swift */,
-				7A4FAF4829F7B6CE00E19842 /* MapInfoVC.swift */,
+				7A4FAF4829F7B6CE00E19842 /* RestaurantInfoVC.swift */,
 				7ACBC83E2A0A224D00896297 /* TasteReviewListVC.swift */,
 				7A36AB2A2A18DB7600ADE4EC /* TasteReivewCell.swift */,
 			);
@@ -299,7 +299,7 @@
 				7A36AB2B2A18DB7600ADE4EC /* TasteReivewCell.swift in Sources */,
 				7A36AB092A18CE1A00ADE4EC /* UICollectionViewDataSource.swift in Sources */,
 				7A5BC8F529E63A2500BBC3B3 /* AppDelegate.swift in Sources */,
-				7A4FAF4929F7B6CE00E19842 /* MapInfoVC.swift in Sources */,
+				7A4FAF4929F7B6CE00E19842 /* RestaurantInfoVC.swift in Sources */,
 				7A5BC91129E63B5600BBC3B3 /* UITextField+Extenstion.swift in Sources */,
 				7A36AB062A18CC0900ADE4EC /* reviewAPI.swift in Sources */,
 				7A5BC8F729E63A2500BBC3B3 /* SceneDelegate.swift in Sources */,

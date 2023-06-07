@@ -95,8 +95,7 @@ class LoginVC: UIViewController {
         button.layer.shadowOffset = CGSize(width: 0, height: 4)
         button.layer.shadowRadius = 4
         button.layer.shadowOpacity = 0.25
-//        button.addTarget(LoginVC.self, action: #selector(loginButtonTapped(UIButton)), for: .touchUpInside)
-//        
+        button.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
         return button
         
     }()
@@ -140,7 +139,7 @@ class LoginVC: UIViewController {
         button.titleLabel?.font = UIFont.systemFont(ofSize: 13, weight: .semibold)
         button.setTitleColor(UIColor(r: 146, g: 143, b: 143), for: .normal)
         
-        //     button.addTarget(MainViewController.self, action: #selector(filterbuttonTapped), for: .touchUpInside)
+        button.addTarget(self, action: #selector(signupButtonTapped), for: .touchUpInside)
         
         return button
         
@@ -156,23 +155,6 @@ class LoginVC: UIViewController {
     }
     
     
-    @objc func signupButtonTapped(_ sender: UIButton) {
-           let alertController = UIAlertController(title: "회원 가입", message: "The button was clicked.", preferredStyle: .alert)
-           let okAction = UIAlertAction(title: "OK", style: .default) { (action) in
-               // OK 버튼을 클릭하면 실행될 코드
-           }
-           alertController.addAction(okAction)
-           self.present(alertController, animated: true, completion: nil)
-       }
-    
-    @objc func loginButtonTapped(_ sender: UIButton) {
-           let alertController = UIAlertController(title: "", message: "The button was clicked.", preferredStyle: .alert)
-           let okAction = UIAlertAction(title: "OK", style: .default) { (action) in
-               // OK 버튼을 클릭하면 실행될 코드
-           }
-           alertController.addAction(okAction)
-           self.present(alertController, animated: true, completion: nil)
-       }
     
     func setup(){
         
@@ -237,6 +219,18 @@ class LoginVC: UIViewController {
         
         
     }
+    
+    @objc private func signupButtonTapped(_ sender: UIButton) {
+        let secondVC = SignupVC()
+        navigationController?.pushViewController(secondVC, animated: true)
+    }
+    
+    @objc private func loginButtonTapped(_ sender: UIButton) {
+        let secondVC = MainVC()
+        navigationController?.pushViewController(secondVC, animated: true)
+    }
+    
+    
     
 }
 

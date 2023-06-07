@@ -1,5 +1,5 @@
 //
-//  MapInfoVC.swift
+//  RestaurantInfoVC.swift
 //  YOZO_iOS
 //
 //  Created by 홍서린 on 2023/04/25.
@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 import CoreLocation
 
-class MapInfoVC : UIViewController {
+class RestaurantInfoVC : UIViewController {
    
     override func viewDidLoad() {
         super.viewDidLoad()

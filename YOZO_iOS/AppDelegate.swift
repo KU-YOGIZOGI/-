@@ -9,10 +9,26 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+                
+                // 첫 번째 View Controller 생성
+                let firstVC = LoginVC()
+                
+                // UINavigationController 생성 및 첫 번째 View Controller 설정
+                let navigationController = UINavigationController(rootViewController: firstVC)
+                
+                // UIWindow의 rootViewController로 UINavigationController 설정
+                window?.rootViewController = navigationController
+                
+                // UIWindow 표시
+                window?.makeKeyAndVisible()
+                
         return true
     }
 

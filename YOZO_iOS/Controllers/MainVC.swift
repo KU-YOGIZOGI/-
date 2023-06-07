@@ -37,17 +37,18 @@ class MainVC: UIViewController,CLLocationManagerDelegate, UISheetPresentationCon
             let marker1 = NMFMarker()
             marker1.position = NMGLatLng(lat: locationManager.location?.coordinate.latitude ?? 37.541478762193435, lng: locationManager.location?.coordinate.longitude ?? 127.06927745555458)
             marker1.mapView = mapView
+        
             
             let marker2 = NMFMarker()
             marker2.position = NMGLatLng(lat: locationManager.location?.coordinate.latitude ?? 37.54229891126673, lng: locationManager.location?.coordinate.longitude ?? 127.06886803313095)
             marker2.mapView = mapView
             
-            // 마커를 클릭했을 때 HalfModalView를 나타내는 동작을 설정합니다.
+            // 마커를 클릭했을 때 HalfModalView를 나타내는 동작을 설정
             marker1.touchHandler = { [weak self] _ in
                 guard let self = self else { return false }
                 
-                // HalfModalView를 보여줄 코드를 작성합니다.
-                let halfModalVC = MapInfoVC()
+                // HalfModalView를 보여줄 코드를 작성
+                let halfModalVC = RestaurantInfoVC()
                 self.present(halfModalVC, animated: true, completion: nil)
                 
                 return true
