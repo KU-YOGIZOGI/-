@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A2EFD612A30F2E90094249D /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2EFD602A30F2E90094249D /* MenuCell.swift */; };
 		717A31CFCC59203ED1E67E8D /* Pods_YOZO_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4DCA2243FF8BECE59C2C208 /* Pods_YOZO_iOS.framework */; };
 		7A36AB032A18CBA400ADE4EC /* TasteReviewListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A36AB022A18CBA400ADE4EC /* TasteReviewListViewModel.swift */; };
 		7A36AB062A18CC0900ADE4EC /* reviewAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A36AB052A18CC0900ADE4EC /* reviewAPI.swift */; };
@@ -18,7 +19,11 @@
 		7A4FAF4929F7B6CE00E19842 /* RestaurantInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4FAF4829F7B6CE00E19842 /* RestaurantInfoVC.swift */; };
 		7A5BC8F529E63A2500BBC3B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BC8F429E63A2500BBC3B3 /* AppDelegate.swift */; };
 		7A5BC8F729E63A2500BBC3B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BC8F629E63A2500BBC3B3 /* SceneDelegate.swift */; };
+
 		7A5BC8F929E63A2500BBC3B3 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BC8F829E63A2500BBC3B3 /* LoginVC.swift */; };
+
+		7A5BC8F929E63A2500BBC3B3 /* RestaurantInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BC8F829E63A2500BBC3B3 /* RestaurantInfoVC.swift */; };
+
 		7A5BC8FE29E63A2600BBC3B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A5BC8FD29E63A2600BBC3B3 /* Assets.xcassets */; };
 		7A5BC90129E63A2600BBC3B3 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A5BC8FF29E63A2600BBC3B3 /* Splash.storyboard */; };
 		7A5BC91129E63B5600BBC3B3 /* UITextField+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BC91029E63B5600BBC3B3 /* UITextField+Extenstion.swift */; };
@@ -31,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		179ACD5215D9B02D7772B9FE /* Pods-YOZO_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YOZO_iOS.debug.xcconfig"; path = "Target Support Files/Pods-YOZO_iOS/Pods-YOZO_iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		1A2EFD602A30F2E90094249D /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		5226DFAB06D975DE15781832 /* Pods-YOZO_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YOZO_iOS.release.xcconfig"; path = "Target Support Files/Pods-YOZO_iOS/Pods-YOZO_iOS.release.xcconfig"; sourceTree = "<group>"; };
 		7A36AB022A18CBA400ADE4EC /* TasteReviewListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasteReviewListViewModel.swift; sourceTree = "<group>"; };
 		7A36AB052A18CC0900ADE4EC /* reviewAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reviewAPI.swift; sourceTree = "<group>"; };
@@ -43,7 +49,11 @@
 		7A5BC8F129E63A2500BBC3B3 /* YOZO_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YOZO_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A5BC8F429E63A2500BBC3B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A5BC8F629E63A2500BBC3B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+
 		7A5BC8F829E63A2500BBC3B3 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+
+		7A5BC8F829E63A2500BBC3B3 /* RestaurantInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantInfoVC.swift; sourceTree = "<group>"; };
+
 		7A5BC8FD29E63A2600BBC3B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A5BC90029E63A2600BBC3B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Splash.storyboard; sourceTree = "<group>"; };
 		7A5BC90229E63A2600BBC3B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -68,6 +78,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A2EFD512A30CFF80094249D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1A2EFD532A30D00B0094249D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		1A2EFD542A30D0150094249D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1A2EFD602A30F2E90094249D /* MenuCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		1A2EFD552A30D01C0094249D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		45C19B2940C63D20835C3F28 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,10 +162,17 @@
 		7A5BC8F329E63A2500BBC3B3 /* YOZO_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				1A2EFD552A30D01C0094249D /* Services */,
+				1A2EFD542A30D0150094249D /* Cells */,
+				1A2EFD532A30D00B0094249D /* ViewModels */,
+				1A2EFD512A30CFF80094249D /* Models */,
 				7A5BC90F29E63B0200BBC3B3 /* Controllers */,
+
 				7A4FAF3F29EFAFDD00E19842 /* ViewModels */,
 				7A36AB072A18CE0300ADE4EC /* DataSource */,
 				7A5BC90E29E63AFD00BBC3B3 /* Models */,
+
+
 				7A5BC90A29E63AD900BBC3B3 /* Extensions */,
 				7A36AB042A18CBF500ADE4EC /* Services */,
 				7A5BC8F429E63A2500BBC3B3 /* AppDelegate.swift */,
@@ -149,6 +195,7 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+
 		7A5BC90E29E63AFD00BBC3B3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +212,12 @@
 				7A4FAF4829F7B6CE00E19842 /* RestaurantInfoVC.swift */,
 				7ACBC83E2A0A224D00896297 /* TasteReviewListVC.swift */,
 				7A36AB2A2A18DB7600ADE4EC /* TasteReivewCell.swift */,
+
+		7A5BC90F29E63B0200BBC3B3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7A5BC8F829E63A2500BBC3B3 /* RestaurantInfoVC.swift */,
+
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -293,11 +346,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+
 				7A4FAF4129EFAFF100E19842 /* SignupViewModel.swift in Sources */,
 				7A5BC8F929E63A2500BBC3B3 /* LoginVC.swift in Sources */,
 				7A36AB032A18CBA400ADE4EC /* TasteReviewListViewModel.swift in Sources */,
 				7A36AB2B2A18DB7600ADE4EC /* TasteReivewCell.swift in Sources */,
 				7A36AB092A18CE1A00ADE4EC /* UICollectionViewDataSource.swift in Sources */,
+
+				1A2EFD612A30F2E90094249D /* MenuCell.swift in Sources */,
+				7A5BC8F929E63A2500BBC3B3 /* RestaurantInfoVC.swift in Sources */,
+
 				7A5BC8F529E63A2500BBC3B3 /* AppDelegate.swift in Sources */,
 				7A4FAF4929F7B6CE00E19842 /* RestaurantInfoVC.swift in Sources */,
 				7A5BC91129E63B5600BBC3B3 /* UITextField+Extenstion.swift in Sources */,
