@@ -6,16 +6,6 @@ target 'YOZO_iOS' do
   use_frameworks!
 
   # Pods for YOZO_iOS
-
- pod 'SnapKit'
-
-  #네트워크 라이브러리
-  pod 'Alamofire', '~> 5.6.4'
-  pod 'NMapsMap'
-
-  #JSON
-  pod 'SwiftyJSON'
-
-  pod 'Toast-Swift', '~>5.0.1'
-
+pod 'SnapKit'
+pod 'Then'
 end
