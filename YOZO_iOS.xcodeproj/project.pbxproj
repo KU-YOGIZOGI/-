@@ -9,28 +9,60 @@
 /* Begin PBXBuildFile section */
 		1A2EFD612A30F2E90094249D /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2EFD602A30F2E90094249D /* MenuCell.swift */; };
 		717A31CFCC59203ED1E67E8D /* Pods_YOZO_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4DCA2243FF8BECE59C2C208 /* Pods_YOZO_iOS.framework */; };
+		7A36AB032A18CBA400ADE4EC /* TasteReviewListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A36AB022A18CBA400ADE4EC /* TasteReviewListViewModel.swift */; };
+		7A36AB062A18CC0900ADE4EC /* reviewAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A36AB052A18CC0900ADE4EC /* reviewAPI.swift */; };
+		7A36AB092A18CE1A00ADE4EC /* UICollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A36AB082A18CE1A00ADE4EC /* UICollectionViewDataSource.swift */; };
+		7A36AB2B2A18DB7600ADE4EC /* TasteReivewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A36AB2A2A18DB7600ADE4EC /* TasteReivewCell.swift */; };
+		7A4FAF4129EFAFF100E19842 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4FAF4029EFAFF100E19842 /* SignupViewModel.swift */; };
+		7A4FAF4329EFAFFF00E19842 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4FAF4229EFAFFF00E19842 /* LoginViewModel.swift */; };
+		7A4FAF4529F4ED8000E19842 /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4FAF4429F4ED8000E19842 /* SignupVC.swift */; };
+		7A4FAF4929F7B6CE00E19842 /* RestaurantInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4FAF4829F7B6CE00E19842 /* RestaurantInfoVC.swift */; };
 		7A5BC8F529E63A2500BBC3B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BC8F429E63A2500BBC3B3 /* AppDelegate.swift */; };
 		7A5BC8F729E63A2500BBC3B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BC8F629E63A2500BBC3B3 /* SceneDelegate.swift */; };
+
+		7A5BC8F929E63A2500BBC3B3 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BC8F829E63A2500BBC3B3 /* LoginVC.swift */; };
+
 		7A5BC8F929E63A2500BBC3B3 /* RestaurantInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BC8F829E63A2500BBC3B3 /* RestaurantInfoVC.swift */; };
+
 		7A5BC8FE29E63A2600BBC3B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A5BC8FD29E63A2600BBC3B3 /* Assets.xcassets */; };
-		7A5BC90129E63A2600BBC3B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A5BC8FF29E63A2600BBC3B3 /* LaunchScreen.storyboard */; };
+		7A5BC90129E63A2600BBC3B3 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A5BC8FF29E63A2600BBC3B3 /* Splash.storyboard */; };
 		7A5BC91129E63B5600BBC3B3 /* UITextField+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BC91029E63B5600BBC3B3 /* UITextField+Extenstion.swift */; };
 		7A5BC91329E63B6500BBC3B3 /*  UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BC91229E63B6500BBC3B3 /*  UIColor+Extension.swift */; };
+		7A5BC91729E63F2700BBC3B3 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BC91629E63F2700BBC3B3 /* MainVC.swift */; };
+		7A5BC91929E65E4F00BBC3B3 /* InsetTextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BC91829E65E4F00BBC3B3 /* InsetTextField+Extension.swift */; };
+		7A5BC91F29E9348000BBC3B3 /* SplashLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A5BC91E29E9347F00BBC3B3 /* SplashLogo.png */; };
+		7ACBC83F2A0A224D00896297 /* TasteReviewListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACBC83E2A0A224D00896297 /* TasteReviewListVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		179ACD5215D9B02D7772B9FE /* Pods-YOZO_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YOZO_iOS.debug.xcconfig"; path = "Target Support Files/Pods-YOZO_iOS/Pods-YOZO_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		1A2EFD602A30F2E90094249D /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		5226DFAB06D975DE15781832 /* Pods-YOZO_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YOZO_iOS.release.xcconfig"; path = "Target Support Files/Pods-YOZO_iOS/Pods-YOZO_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		7A36AB022A18CBA400ADE4EC /* TasteReviewListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasteReviewListViewModel.swift; sourceTree = "<group>"; };
+		7A36AB052A18CC0900ADE4EC /* reviewAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reviewAPI.swift; sourceTree = "<group>"; };
+		7A36AB082A18CE1A00ADE4EC /* UICollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewDataSource.swift; sourceTree = "<group>"; };
+		7A36AB2A2A18DB7600ADE4EC /* TasteReivewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasteReivewCell.swift; sourceTree = "<group>"; };
+		7A4FAF4029EFAFF100E19842 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
+		7A4FAF4229EFAFFF00E19842 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		7A4FAF4429F4ED8000E19842 /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
+		7A4FAF4829F7B6CE00E19842 /* RestaurantInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantInfoVC.swift; sourceTree = "<group>"; };
 		7A5BC8F129E63A2500BBC3B3 /* YOZO_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YOZO_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A5BC8F429E63A2500BBC3B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A5BC8F629E63A2500BBC3B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+
+		7A5BC8F829E63A2500BBC3B3 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+
 		7A5BC8F829E63A2500BBC3B3 /* RestaurantInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantInfoVC.swift; sourceTree = "<group>"; };
+
 		7A5BC8FD29E63A2600BBC3B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7A5BC90029E63A2600BBC3B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7A5BC90029E63A2600BBC3B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Splash.storyboard; sourceTree = "<group>"; };
 		7A5BC90229E63A2600BBC3B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A5BC91029E63B5600BBC3B3 /* UITextField+Extenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extenstion.swift"; sourceTree = "<group>"; };
 		7A5BC91229E63B6500BBC3B3 /*  UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " UIColor+Extension.swift"; sourceTree = "<group>"; };
+		7A5BC91629E63F2700BBC3B3 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		7A5BC91829E65E4F00BBC3B3 /* InsetTextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InsetTextField+Extension.swift"; sourceTree = "<group>"; };
+		7A5BC91E29E9347F00BBC3B3 /* SplashLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SplashLogo.png; sourceTree = "<group>"; };
+		7ACBC83E2A0A224D00896297 /* TasteReviewListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasteReviewListVC.swift; sourceTree = "<group>"; };
 		D4DCA2243FF8BECE59C2C208 /* Pods_YOZO_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YOZO_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -83,6 +115,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7A36AB042A18CBF500ADE4EC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7A36AB052A18CC0900ADE4EC /* reviewAPI.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7A36AB072A18CE0300ADE4EC /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				7A36AB082A18CE1A00ADE4EC /* UICollectionViewDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		7A4FAF3F29EFAFDD00E19842 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7A4FAF4029EFAFF100E19842 /* SignupViewModel.swift */,
+				7A4FAF4229EFAFFF00E19842 /* LoginViewModel.swift */,
+				7A36AB022A18CBA400ADE4EC /* TasteReviewListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		7A5BC8E829E63A2500BBC3B3 = {
 			isa = PBXGroup;
 			children = (
@@ -109,10 +167,18 @@
 				1A2EFD532A30D00B0094249D /* ViewModels */,
 				1A2EFD512A30CFF80094249D /* Models */,
 				7A5BC90F29E63B0200BBC3B3 /* Controllers */,
+
+				7A4FAF3F29EFAFDD00E19842 /* ViewModels */,
+				7A36AB072A18CE0300ADE4EC /* DataSource */,
+				7A5BC90E29E63AFD00BBC3B3 /* Models */,
+
+
 				7A5BC90A29E63AD900BBC3B3 /* Extensions */,
+				7A36AB042A18CBF500ADE4EC /* Services */,
 				7A5BC8F429E63A2500BBC3B3 /* AppDelegate.swift */,
 				7A5BC8F629E63A2500BBC3B3 /* SceneDelegate.swift */,
-				7A5BC8FF29E63A2600BBC3B3 /* LaunchScreen.storyboard */,
+				7A5BC8FF29E63A2600BBC3B3 /* Splash.storyboard */,
+				7A5BC91E29E9347F00BBC3B3 /* SplashLogo.png */,
 				7A5BC8FD29E63A2600BBC3B3 /* Assets.xcassets */,
 				7A5BC90229E63A2600BBC3B3 /* Info.plist */,
 			);
@@ -124,14 +190,34 @@
 			children = (
 				7A5BC91029E63B5600BBC3B3 /* UITextField+Extenstion.swift */,
 				7A5BC91229E63B6500BBC3B3 /*  UIColor+Extension.swift */,
+				7A5BC91829E65E4F00BBC3B3 /* InsetTextField+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+
+		7A5BC90E29E63AFD00BBC3B3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		7A5BC90F29E63B0200BBC3B3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				7A5BC8F829E63A2500BBC3B3 /* LoginVC.swift */,
+				7A4FAF4429F4ED8000E19842 /* SignupVC.swift */,
+				7A5BC91629E63F2700BBC3B3 /* MainVC.swift */,
+				7A4FAF4829F7B6CE00E19842 /* RestaurantInfoVC.swift */,
+				7ACBC83E2A0A224D00896297 /* TasteReviewListVC.swift */,
+				7A36AB2A2A18DB7600ADE4EC /* TasteReivewCell.swift */,
+
+		7A5BC90F29E63B0200BBC3B3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
 				7A5BC8F829E63A2500BBC3B3 /* RestaurantInfoVC.swift */,
+
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -205,8 +291,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A5BC90129E63A2600BBC3B3 /* LaunchScreen.storyboard in Resources */,
+				7A5BC90129E63A2600BBC3B3 /* Splash.storyboard in Resources */,
 				7A5BC8FE29E63A2600BBC3B3 /* Assets.xcassets in Resources */,
+				7A5BC91F29E9348000BBC3B3 /* SplashLogo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,24 +346,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+
+				7A4FAF4129EFAFF100E19842 /* SignupViewModel.swift in Sources */,
+				7A5BC8F929E63A2500BBC3B3 /* LoginVC.swift in Sources */,
+				7A36AB032A18CBA400ADE4EC /* TasteReviewListViewModel.swift in Sources */,
+				7A36AB2B2A18DB7600ADE4EC /* TasteReivewCell.swift in Sources */,
+				7A36AB092A18CE1A00ADE4EC /* UICollectionViewDataSource.swift in Sources */,
+
 				1A2EFD612A30F2E90094249D /* MenuCell.swift in Sources */,
 				7A5BC8F929E63A2500BBC3B3 /* RestaurantInfoVC.swift in Sources */,
+
 				7A5BC8F529E63A2500BBC3B3 /* AppDelegate.swift in Sources */,
+				7A4FAF4929F7B6CE00E19842 /* RestaurantInfoVC.swift in Sources */,
 				7A5BC91129E63B5600BBC3B3 /* UITextField+Extenstion.swift in Sources */,
+				7A36AB062A18CC0900ADE4EC /* reviewAPI.swift in Sources */,
 				7A5BC8F729E63A2500BBC3B3 /* SceneDelegate.swift in Sources */,
+				7ACBC83F2A0A224D00896297 /* TasteReviewListVC.swift in Sources */,
+				7A5BC91929E65E4F00BBC3B3 /* InsetTextField+Extension.swift in Sources */,
+				7A4FAF4529F4ED8000E19842 /* SignupVC.swift in Sources */,
 				7A5BC91329E63B6500BBC3B3 /*  UIColor+Extension.swift in Sources */,
+				7A4FAF4329EFAFFF00E19842 /* LoginViewModel.swift in Sources */,
+				7A5BC91729E63F2700BBC3B3 /* MainVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7A5BC8FF29E63A2600BBC3B3 /* LaunchScreen.storyboard */ = {
+		7A5BC8FF29E63A2600BBC3B3 /* Splash.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				7A5BC90029E63A2600BBC3B3 /* Base */,
 			);
-			name = LaunchScreen.storyboard;
+			name = Splash.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -408,7 +510,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = YOZO_iOS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = Splash;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -437,7 +539,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = YOZO_iOS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = Splash;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

@@ -15,10 +15,24 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
+
+        window = UIWindow(frame: UIScreen.main.bounds)
+        
+        let mainVC = LoginVC()
+        
+        let navVC = UINavigationController(rootViewController: LoginVC())
+        
+        window?.rootViewController = navVC
+        
+        window?.makeKeyAndVisible()
+        
+        window?.windowScene = windowScene
+
         let window = UIWindow(windowScene: windowScene)
         window.rootViewController = RestaurantInfoVC()
         self.window = window
         window.makeKeyAndVisible()
+
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
