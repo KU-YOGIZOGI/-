@@ -7,6 +7,7 @@ target 'YOZO_iOS' do
 
   # Pods for YOZO_iOS
 
+
  pod 'SnapKit'
 
   #네트워크 라이브러리
@@ -16,5 +17,9 @@ target 'YOZO_iOS' do
   #JSON
   pod 'SwiftyJSON'
 
+
+
+pod 'SnapKit'
+pod 'Then'
 
 end
