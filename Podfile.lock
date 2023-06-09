@@ -1,20 +1,38 @@
 PODS:
   - SnapKit (5.6.0)
+
+  - SwiftyJSON (5.0.1)
+
   - Then (3.0.0)
+
 
 DEPENDENCIES:
   - SnapKit
+
+  - SwiftyJSON
+
   - Then
+
 
 SPEC REPOS:
   trunk:
     - SnapKit
+
+    - SwiftyJSON
+
     - Then
+
 
 SPEC CHECKSUMS:
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+
+PODFILE CHECKSUM: 950a7241fdae2fe4631577ec1a893352bbbb144e
+
   Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
 
 PODFILE CHECKSUM: 177c3c3f4978369a0662a9d8a909a3cf06c95cda
+
 
 COCOAPODS: 1.12.0

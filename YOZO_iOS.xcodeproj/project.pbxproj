@@ -31,6 +31,7 @@
 		7A5BC91729E63F2700BBC3B3 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BC91629E63F2700BBC3B3 /* MainVC.swift */; };
 		7A5BC91929E65E4F00BBC3B3 /* InsetTextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BC91829E65E4F00BBC3B3 /* InsetTextField+Extension.swift */; };
 		7A5BC91F29E9348000BBC3B3 /* SplashLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A5BC91E29E9347F00BBC3B3 /* SplashLogo.png */; };
+		7A7E2F152A32F7C7007B566E /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7E2F142A32F7C7007B566E /* MenuCell.swift */; };
 		7ACBC83F2A0A224D00896297 /* TasteReviewListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACBC83E2A0A224D00896297 /* TasteReviewListVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		7A5BC91629E63F2700BBC3B3 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		7A5BC91829E65E4F00BBC3B3 /* InsetTextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InsetTextField+Extension.swift"; sourceTree = "<group>"; };
 		7A5BC91E29E9347F00BBC3B3 /* SplashLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SplashLogo.png; sourceTree = "<group>"; };
+		7A7E2F142A32F7C7007B566E /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuCell.swift; path = ../../../MenuCell.swift; sourceTree = "<group>"; };
 		7ACBC83E2A0A224D00896297 /* TasteReviewListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasteReviewListVC.swift; sourceTree = "<group>"; };
 		D4DCA2243FF8BECE59C2C208 /* Pods_YOZO_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YOZO_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -170,7 +172,10 @@
 
 				7A4FAF3F29EFAFDD00E19842 /* ViewModels */,
 				7A36AB072A18CE0300ADE4EC /* DataSource */,
+
+
 				7A5BC90E29E63AFD00BBC3B3 /* Models */,
+
 
 
 				7A5BC90A29E63AD900BBC3B3 /* Extensions */,
@@ -203,6 +208,7 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+
 		7A5BC90F29E63B0200BBC3B3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,10 +219,14 @@
 				7ACBC83E2A0A224D00896297 /* TasteReviewListVC.swift */,
 				7A36AB2A2A18DB7600ADE4EC /* TasteReivewCell.swift */,
 
+				7A7E2F142A32F7C7007B566E /* MenuCell.swift */,
+
+
 		7A5BC90F29E63B0200BBC3B3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				7A5BC8F829E63A2500BBC3B3 /* RestaurantInfoVC.swift */,
+
 
 			);
 			path = Controllers;
@@ -366,6 +376,7 @@
 				7A4FAF4529F4ED8000E19842 /* SignupVC.swift in Sources */,
 				7A5BC91329E63B6500BBC3B3 /*  UIColor+Extension.swift in Sources */,
 				7A4FAF4329EFAFFF00E19842 /* LoginViewModel.swift in Sources */,
+				7A7E2F152A32F7C7007B566E /* MenuCell.swift in Sources */,
 				7A5BC91729E63F2700BBC3B3 /* MainVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
