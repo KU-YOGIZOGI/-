@@ -16,6 +16,5 @@ target 'YOZO_iOS' do
   #JSON
   pod 'SwiftyJSON'
 
-  pod 'Toast-Swift', '~>5.0.1'
 
 end
