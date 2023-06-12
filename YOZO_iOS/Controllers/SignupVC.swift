@@ -154,7 +154,7 @@ class SignupVC: UIViewController {
         button.layer.shadowOffset = CGSize(width: 0, height: 4)
         button.layer.shadowRadius = 4
         button.layer.shadowOpacity = 0.25
-        //     button.addTarget(MainViewController.self, action: #selector(filterbuttonTapped), for: .touchUpInside)
+        button.addTarget(self, action: #selector(signUpButtonTapped), for: .touchUpInside)
         
         return button
         
@@ -250,5 +250,10 @@ class SignupVC: UIViewController {
         }
         
     }
+    @objc private func signUpButtonTapped(_ sender: UIButton) {
+        let secondVC = LoginVC()
+        navigationController?.pushViewController(secondVC, animated: true)
+    }
+    
 }
 
