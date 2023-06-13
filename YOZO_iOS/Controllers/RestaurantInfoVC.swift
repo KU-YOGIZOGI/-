@@ -76,7 +76,8 @@ class RestaurantInfoVC: UIViewController, UICollectionViewDataSource, UICollecti
         
         menuCollectionView.dataSource = self
         menuCollectionView.delegate = self
-        menuCollectionView.register(MenuCollectionViewCell.self, forCellWithReuseIdentifier: "MenuCell")
+        menuCollectionView.register(MenuCell.self, forCellWithReuseIdentifier: "MenuCell")
+        
         menuCollectionView.snp.makeConstraints { make in
             make.top.equalTo(detailsLabel.snp.bottom).offset(10)
             make.leading.equalToSuperview().offset(10)
@@ -92,7 +93,7 @@ class RestaurantInfoVC: UIViewController, UICollectionViewDataSource, UICollecti
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MenuCell", for: indexPath) as! MenuCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MenuCell", for: indexPath) as! MenuCell
         cell.imageView.image = UIImage(named: "kimchi")
         cell.nameLabel.text = "김치찌개"
         return cell
@@ -109,6 +110,15 @@ class RestaurantInfoVC: UIViewController, UICollectionViewDataSource, UICollecti
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 10, left: 10, bottom: 0, right: 10)
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let tasteReviewListVC = TasteReviewListVC()
+        let navigationController = UINavigationController(rootViewController: tasteReviewListVC)
+        present(navigationController, animated: true, completion: nil)
+        
+        
+       }
 
 }
 

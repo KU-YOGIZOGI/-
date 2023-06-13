@@ -157,9 +157,9 @@
 				7A4FAF4429F4ED8000E19842 /* SignupVC.swift */,
 				7A5BC91629E63F2700BBC3B3 /* MainVC.swift */,
 				7A4FAF4829F7B6CE00E19842 /* RestaurantInfoVC.swift */,
+				7A7E2F162A32FC22007B566E /* MenuCell.swift */,
 				7ACBC83E2A0A224D00896297 /* TasteReviewListVC.swift */,
 				7A36AB2A2A18DB7600ADE4EC /* TasteReivewCell.swift */,
-				7A7E2F162A32FC22007B566E /* MenuCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
