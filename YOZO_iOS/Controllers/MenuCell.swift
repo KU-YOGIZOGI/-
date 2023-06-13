@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class MenuCollectionViewCell: UICollectionViewCell {
+class MenuCell: UICollectionViewCell {
     let imageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
@@ -33,6 +33,7 @@ class MenuCollectionViewCell: UICollectionViewCell {
         imageView.snp.makeConstraints { make in
             make.top.leading.trailing.equalToSuperview()
             make.height.equalTo(imageView.snp.width) // 이미지뷰의 크기를 1:1 비율로 설정
+            imageView.layer.cornerRadius = 10
         }
         
         nameLabel.snp.makeConstraints { make in
@@ -42,6 +43,8 @@ class MenuCollectionViewCell: UICollectionViewCell {
             make.bottom.equalToSuperview()
         }
     }
+    
+    
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
