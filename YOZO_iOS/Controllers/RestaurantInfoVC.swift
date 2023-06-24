@@ -84,7 +84,10 @@ class RestaurantInfoVC: UIViewController, UICollectionViewDataSource, UICollecti
             make.trailing.equalToSuperview().offset(-10)
             make.bottom.equalToSuperview()
         }
+        
+        
     }
+
     
     // MARK: - UICollectionViewDataSource
     

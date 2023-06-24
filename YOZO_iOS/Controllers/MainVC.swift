@@ -16,6 +16,7 @@ class MainVC: UIViewController,CLLocationManagerDelegate, UISheetPresentationCon
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       
         
         let mapView = NMFMapView(frame: view.frame)
         view.addSubview(mapView)
@@ -59,7 +60,7 @@ class MainVC: UIViewController,CLLocationManagerDelegate, UISheetPresentationCon
         }
         
     }
-    
+
     
 }
 

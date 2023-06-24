@@ -28,6 +28,7 @@
 		7A7E2F172A32FC22007B566E /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7E2F162A32FC22007B566E /* MenuCell.swift */; };
 		7ACBC83F2A0A224D00896297 /* TasteReviewListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACBC83E2A0A224D00896297 /* TasteReviewListVC.swift */; };
 		7AD6253A2A36FBD900768257 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD625392A36FBD900768257 /* UIColor+Extension.swift */; };
+		7AD6253C2A3864BE00768257 /* TasteReviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD6253B2A3864BE00768257 /* TasteReviewVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		7A7E2F162A32FC22007B566E /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		7ACBC83E2A0A224D00896297 /* TasteReviewListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasteReviewListVC.swift; sourceTree = "<group>"; };
 		7AD625392A36FBD900768257 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		7AD6253B2A3864BE00768257 /* TasteReviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TasteReviewVC.swift; path = ../../../../Documents/TasteReviewVC.swift; sourceTree = "<group>"; };
 		D4DCA2243FF8BECE59C2C208 /* Pods_YOZO_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YOZO_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -160,6 +162,7 @@
 				7A7E2F162A32FC22007B566E /* MenuCell.swift */,
 				7ACBC83E2A0A224D00896297 /* TasteReviewListVC.swift */,
 				7A36AB2A2A18DB7600ADE4EC /* TasteReivewCell.swift */,
+				7AD6253B2A3864BE00768257 /* TasteReviewVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 			files = (
 				7A4FAF4129EFAFF100E19842 /* SignupViewModel.swift in Sources */,
 				7A5BC8F929E63A2500BBC3B3 /* LoginVC.swift in Sources */,
+				7AD6253C2A3864BE00768257 /* TasteReviewVC.swift in Sources */,
 				7A36AB032A18CBA400ADE4EC /* TasteReviewListViewModel.swift in Sources */,
 				7A36AB2B2A18DB7600ADE4EC /* TasteReivewCell.swift in Sources */,
 				7AD6253A2A36FBD900768257 /* UIColor+Extension.swift in Sources */,
