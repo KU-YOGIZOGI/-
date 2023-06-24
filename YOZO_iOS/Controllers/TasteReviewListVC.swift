@@ -20,6 +20,6 @@ class TasteReviewListVC: UIViewController {
 
         
     }
-   
+
 }
 
